@@ -1,0 +1,108 @@
+/* ~Global Style */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+span,
+a {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* ############################################ */
+/* ^Header Section Style */
+
+/* & team Section */
+.team {
+  background-color: #fff;
+  padding: 30px 0px;
+}
+.title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.title h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #fdeff2;
+  width: fit-content;
+  margin: auto;
+  color: #e43c5c;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.title h3 {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.title h3 span {
+  color: #e43c5c;
+}
+.title p {
+  /* font-size: 15px; */
+  font-weight: 600;
+  max-width: 500px;
+  margin: auto;
+  color: #444444;
+}
+.all-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 100%;
+  padding: 10px;
+}
+.inner-card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px 0px #0000003b;
+}
+.card img {
+  width: 100%;
+}
+.card .card-body {
+  padding: 0px 10px;
+  text-align: center;
+}
+.card-body h4 {
+  font-size: 20px;
+  margin: 5px;
+}
+.card-body h5 {
+  color: #444444;
+  font-size: 15px;
+  margin: 5px;
+}
+.card .card-image {
+  position: relative;
+}
+.card-image .layer {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.card:hover .layer {
+  opacity: 1;
+}
+.layer ul {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
